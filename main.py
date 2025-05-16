@@ -1,5 +1,6 @@
 import requests
 from flask import Flask, request
+import os
 
 app = Flask(__name__)
 
@@ -36,8 +37,6 @@ def send_signal():
 @app.route('/')
 def home():
     return "Bot is running"
-
-import os
 
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))
