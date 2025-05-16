@@ -20,7 +20,7 @@ TradingView बाट आउने alert लाई webhook मार्फत re
 
 ## कसरी चलाउने (Setup)
 
-1. `main.py मा तिम्रो Telegram Bot Token र Chat ID राख।  
+1. `main.py` मा तिम्रो Telegram Bot Token र Chat ID राख।
 2. GitHub मा project upload गर।  
 3. Railway मा project बनाएर GitHub repo connect गर।  
 4. Deploy गरेपछि, Telegram Bot चल्न थाल्छ।  
