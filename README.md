@@ -1,46 +1,46 @@
 # FOREX-SIGNAL-BOT
 # Forex Signal Telegram Bot
 
-यो प्रोजेक्टले Forex trading का लागि Telegram मा automatic signals पठाउने Bot बनाउँछ।  
-यसले TradingView बाट आउने webhook signals लाई receive गरेर Telegram मा तपाईँलाई Entry, SL, TP हरु पठाउँछ।
+यो प्रोजेक्टले Forex trading को लागि Telegram मा automatic signals पठाउने Bot बनाउँछ।  
+TradingView बाट आउने alert लाई webhook मार्फत receive गरी, Entry, SL, TP हरु Telegram मा पठाउँछ।
 
-## Features
+## विशेषता (Features)
 
-- Multiple currency pairs support (जस्तै: XAUUSD, USDJPY, EURUSD)
-- Automatic signal sending based on TradingView alerts
-- Entry, Stop Loss, Take Profit levels सहित signal पठाउने
-- Personal use का लागि सजिलो र छिटो deploy गर्ने तरिका
+- XAUUSD, USDJPY, EURUSD जस्ता multiple currency pairs support गर्छ।  
+- TradingView alerts बाट automatic signal पठाउँछ।  
+- Entry, Stop Loss, Take Profit (TP1-TP4) सहित signal पठाउँछ।  
+- व्यक्तिगत प्रयोगका लागि सजिलो deployment।
 
-## Requirements
+## आवश्यक सामग्री (Requirements)
 
-- Python 3.x
-- Flask
-- requests library
-- Telegram Bot Token र Chat ID (तपाईँको Telegram बाट लिने)
+- Python 3.x  
+- Flask library  
+- requests library  
+- Telegram Bot Token र Chat ID (तिम्रो Telegram बाट लिने)
 
-## Setup
+## कसरी चलाउने (Setup)
 
-1. `main.py` फाइलमा आफ्नो Telegram Bot Token र Chat ID राख्नुहोस्।
-2. GitHub मा आफ्नो code upload गर्नुहोस्।
-3. Railway मा project बनाउनुहोस् र GitHub repo जोड्नुहोस्।
-4. Deploy गरेपछि, Telegram Bot चलिरहेको हुन्छ।
-5. TradingView मा alert सेट गरेर webhook URL दिनुहोस्:  
-   `https://your-railway-project-url/signal`
+1. main.py मा तिम्रो Telegram Bot Token र Chat ID राख।  
+2. GitHub मा project upload गर।  
+3. Railway मा project बनाएर GitHub repo connect गर।  
+4. Deploy गरेपछि, Telegram Bot चल्न थाल्छ।  
+5. TradingView मा webhook URL सेट गर:  
+   `https://तिम्रो-railway-project-url/signal`  
 
-## Usage
+## प्रयोग (Usage)
 
-TradingView बाट alert JSON format मा पठाउनुहोस् जसमा यी fields हुनेछन्:  
-`pair`, `entry`, `sl`, `tp1`, `tp2`, `tp3`, `tp4`
+TradingView बाट alert JSON format मा signal पठाउँछ जसमा यी fields हुनेछन्:  
+`pair`, `entry`, `sl`, `tp1`, `tp2`, `tp3`, `tp4`  
 
-Bot ले त्यो message Telegram मा पठाउनेछ।
+Bot ले Telegram मा यो जानकारी पठाउनेछ।
 
 ---
 
 ## Author
 
-तपाईँको नाम वा ID यहाँ राख्न सक्नुहुन्छ।
+तिम्रो नाम यहाँ राख्न सकिन्छ।
 
 ---
 
-**Note:** यो प्रोजेक्ट व्यक्तिगत प्रयोगका लागि बनाइएको हो।  
-यो Bot ले automatic trading गर्दैन, signal matra पठाउँछ।
+**नोट:** यो Bot automatic trading गर्दैन, signal matra पठाउँछ।  
+Personal use का लागि मात्र बनाइएको हो।
